@@ -11,7 +11,7 @@ const NUMBER_OF_POSTS = 25
 /**
  * Handle fetching a set of posts from the API endpoint.
  */
-const handleFetchPostsAndSendToMQ = async () => {
+const handleFetchPostsAndSendToAMQ = async () => {
     const postsApiEndpoint = 'https://jsonplaceholder.typicode.com/posts';
 
     // First, fetch the response from the remote API endpoint
@@ -55,4 +55,4 @@ const handleFetchPostsAndSendToMQ = async () => {
 }
 
 // Call the function to fetch the posts and send them to Apache Active MQ.
-handleFetchPostsAndSendToMQ();
+handleFetchPostsAndSendToAMQ();
