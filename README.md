@@ -8,6 +8,9 @@ later retrieved and inserted into a `sqlite` database in `posts/database.sqlite`
 
 ## How to Run
 
+Prerequisites to running this project are that you have Apache ActiveMQ installed
+and running. You will specify the port and host in the .env file.
+
 To run this project, you first need to `cd` into the `posts` directory, and install
 all dependencies by running `npm install`. 
 
@@ -17,7 +20,7 @@ environment.
 
 ```bash
 cp EXAMPLE.env .env
-vim .env
+$EDITOR .env
 ```
 
 Then, you can use the scripts configured 
